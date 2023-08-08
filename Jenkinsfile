@@ -22,7 +22,6 @@ pipeline{
                 success{
                     mail to: "zacandbel@gmail.com",
                     subject: "Testing Status",
-                    attachLog: true,
                     body: "Testing completed successfully"
                 }
             }
@@ -41,7 +40,6 @@ pipeline{
                 success{
                     mail to: "zacandbel@gmail.com",
                     subject: "Security Scan Status",
-                    attachLog: true, 
                     body: "Scanning completed successfully"
                 }
             }
