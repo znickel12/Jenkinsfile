@@ -41,7 +41,7 @@ pipeline{
                 success{
                     emailext to: "zacandbel@gmail.com",
                     subject: "Security Scan Status",
-                    body: "Scanning completed successfully"
+                    body: "Scanning completed successfully",
                     attachLog: true
                 }
             }
