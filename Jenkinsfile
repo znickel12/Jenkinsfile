@@ -20,10 +20,12 @@ pipeline{
             }
             post{
                 success{
-                    emailext to: "zacandbel@gmail.com",
+                success{
+                    emailext body: "Testing completed successfully",
                     subject: "Testing Status",
-                    body: "Testing completed successfully",
+                    to: "zacandbel@gmail.com",
                     attachLog: true
+                }
                 }
             }
         }    
@@ -39,9 +41,9 @@ pipeline{
             }
             post{
                 success{
-                    emailext to: "zacandbel@gmail.com",
+                    emailext body: "Scanning completed successfully",
                     subject: "Security Scan Status",
-                    body: "Scanning completed successfully",
+                    to: "zacandbel@gmail.com",
                     attachLog: true
                 }
             }
