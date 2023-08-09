@@ -60,6 +60,7 @@ pipeline{
         stage('Deploy to Production'){
             steps{
                 echo "Deploy code to the production environment: $PRODUCTION_ENVIRONMENT"
+                echo "Working well"
             }
         }    
     }
